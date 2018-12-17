@@ -24,30 +24,57 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:padding="15dp"
         android:textColor="@color/black"
         android:text="message"
         android:textSize="15sp"
         />
-    <com.kira.appledialog.ClearEditText
+    <LinearLayout
         android:layout_width="match_parent"
-        android:background="@drawable/shape_stoke_5dp"
         android:layout_margin="10dp"
-        android:textSize="14sp"
-        android:id="@+id/edit_first"
+        android:gravity="center_vertical"
         android:padding="6dp"
-        android:layout_height="wrap_content" />
-    <com.kira.appledialog.ClearEditText
-        android:layout_width="match_parent"
         android:background="@drawable/shape_stoke_5dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:id="@+id/edit_first"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/icon_delete"
+            android:id="@+id/iv_del1"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
         android:layout_marginBottom="10dp"
-        android:textSize="14sp"
-        android:id="@+id/edit_sec"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/ll_edit_sec"
+        android:layout_marginRight="10dp"
         android:visibility="gone"
         android:padding="6dp"
-        android:layout_height="wrap_content" />
+        android:background="@drawable/shape_stoke_5dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textSize="14sp"
+            android:id="@+id/edit_sec"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/icon_delete"
+            android:visibility="gone"
+            android:id="@+id/iv_del2"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
