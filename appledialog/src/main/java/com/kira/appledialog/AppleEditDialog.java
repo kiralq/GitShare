@@ -69,7 +69,7 @@ public class AppleEditDialog extends Dialog {
                 if(editable.toString().length()>0){
                     iv_del1.setVisibility(View.VISIBLE);
                 }else{
-                    iv_del1.setVisibility(View.GONE);
+                    iv_del1.setVisibility(View.INVISIBLE);
                 }
             }
         });
@@ -89,7 +89,7 @@ public class AppleEditDialog extends Dialog {
                 if(editable.toString().length()>0){
                     iv_del2.setVisibility(View.VISIBLE);
                 }else{
-                    iv_del2.setVisibility(View.GONE);
+                    iv_del2.setVisibility(View.INVISIBLE);
                 }
             }
         });
@@ -130,6 +130,7 @@ public class AppleEditDialog extends Dialog {
         if (msg != null) {
             edit_sec.setHint(msg);
             edit_sec.setVisibility(View.VISIBLE);
+            ll_edit_sec.setVisibility(View.VISIBLE);
         }
         return this;
     }
@@ -152,7 +153,7 @@ public class AppleEditDialog extends Dialog {
         if (text != null) {
             tv_negative.setText(text);
             tv_negative.setVisibility(View.VISIBLE);
-            ll_edit_sec.setVisibility(View.VISIBLE);
+            line_bottom.setVisibility(View.VISIBLE);
         }
         tv_negative.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -46,7 +46,7 @@
             android:layout_width="wrap_content"
             android:src="@drawable/icon_delete"
             android:id="@+id/iv_del1"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
@@ -70,7 +70,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:src="@drawable/icon_delete"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:id="@+id/iv_del2"
             android:layout_height="wrap_content" />
     </LinearLayout>
